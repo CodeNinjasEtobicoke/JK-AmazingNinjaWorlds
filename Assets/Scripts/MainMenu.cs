@@ -22,5 +22,11 @@ public class MainMenu : MonoBehaviour
         //playerprefs.deletekey("lives_left");
         SceneManager.LoadScene("level3");
     }
-
+    private void Update()
+    {
+        if (Input.GetButton("Cancel"))
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
 }

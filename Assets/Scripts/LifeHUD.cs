@@ -15,7 +15,7 @@ public class LifeHUD : MonoBehaviour
         heart = GameObject.FindGameObjectsWithTag("heart");
         if (PlayerPrefs.HasKey("LIVES_LEFT"))
         {
-            lives = PlayerPrefs.GetInt("LIVES_LEFT");
+            lives = 3; // PlayerPrefs.GetInt("LIVES_LEFT");
             HUDRefresh();
         }
 
